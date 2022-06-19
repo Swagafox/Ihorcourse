@@ -1,0 +1,12 @@
+dist/
+node_modules/
+package.json
+app/css/*
+
+
+.vscode
+.idea/
+.idea/*
+.DS_Store
+*.sublime*
+npm-debug.*
