@@ -1,0 +1,20 @@
+body{
+  font-size: 16px;
+  color: $default;
+  @extend %dmsans-400;
+}
+
+.container{
+  max-width: 1770px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 21px 15px 21px 30px;
+  background-color: #a3bbc8;
+  text-transform: capitalize;
+  font-size: 15px;
+  line-height: 12px;
+}

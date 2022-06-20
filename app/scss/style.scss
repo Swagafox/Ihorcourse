@@ -3,6 +3,146 @@
 @import 'reset';
 @import 'global';
 
+.header{
+  padding-top: 50px;
+  padding-bottom: 75px;
+  &__top{
+    margin-bottom: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu{
+  &__list{
+    display: flex;
+  }
+
+  &__list-item + .menu__list-item{
+     margin-left: 35px;
+  }
+  &__list-link{
+    color: $links;
+    font-size: 15px;
+    line-height: 12px;
+    padding-bottom: 5px;
+    transition: 0.5s;
+    @extend %rubik-500;
+    &:hover {
+      border-bottom: 1px solid $links;
+    }
+  }
+}
+
+.user-nav{
+  display: flex;
+  justify-content: space-between;
+  &__link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #edf1f4;
+    border-radius: 50%;
+    position: relative;
+    &-icon{
+      position: absolute;
+      top: 17px;
+      left: 18px;
+    } 
+  }
+  &__cart{
+    width: 180px;
+    background-color: #fcd7b6;
+    border-radius: 30px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 21px;
+    &-link{
+      position: relative;
+      display: block;
+      padding-top: 21px;
+    }
+    &-num{
+      position: absolute;
+      top: 16px;
+      left: 13px;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      color: $default;
+      font-size: 10px;
+      line-height: 13px;
+      text-align: center;
+      background-color: #fff;
+    }
+  }
+}
+
+.burger{
+  background-color: #a3bbc8;
+}
+
+.menu-icon {
+  top: 15px;
+  left: 16px;
+}
+
+.user-nav__link:first-child{
+  margin-right: 21px;
+}
+
+.header__middle{
+  background-image: url('../images/headerbg.jpg');
+  background-repeat: no-repeat;
+  padding: 90px 0 85px;
+  min-height: 100vh;
+  background-size: cover;
+}
+
+.slider{
+  background-image: url('../images/sliderimgbg.png');
+  background-repeat: no-repeat;
+  min-height: 640px;
+  background-position: top right;
+  padding-top: 130px;
+  max-width: 1270px;
+  margin: 0 auto;
+  &__item{
+    display: flex;
+    justify-content: space-between;
+    &-inner{
+    max-width: 430px;
+    margin-right: 120px;
+      &__title{
+      font-size: 72px;
+      line-height: 70px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      @extend %rubik-500;
+      }
+      &__text{
+      font-size: 18px;
+      line-height: 30px;
+      color: #436372;
+      @extend %rubik-400;
+      margin-bottom: 41px;
+      }
+      &__btn{
+      width: 200px;
+      color: white;
+      @extend %rubik-500;
+      }
+    }
+    &-image{
+    padding-top: 55px;
+    padding-right: 80px;
+    }
+  }
+}
+
+
 
 
 @import 'media';
