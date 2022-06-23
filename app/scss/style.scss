@@ -2,12 +2,11 @@
 @import 'fonts';
 @import 'reset';
 @import 'global';
+@import 'libs';
 
 .header{
-  padding-top: 50px;
-  padding-bottom: 75px;
+  padding: 50px 0;
   &__top{
-    margin-bottom: 45px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -85,20 +84,17 @@
 }
 
 .menu-icon {
-  top: 15px;
-  left: 16px;
+  top: 14px;
+  left: 15px;
 }
 
 .user-nav__link:first-child{
   margin-right: 21px;
 }
 
-.header__middle{
-  background-image: url('../images/headerbg.jpg');
-  background-repeat: no-repeat;
-  padding: 90px 0 85px;
-  min-height: 100vh;
-  background-size: cover;
+.offer{
+  background-color: #fcd7b6;
+  padding: 90px 0 45px;
 }
 
 .slider{
@@ -110,7 +106,7 @@
   max-width: 1270px;
   margin: 0 auto;
   &__item{
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
     &-inner{
     max-width: 430px;
@@ -131,8 +127,18 @@
       }
       &__btn{
       width: 200px;
+      padding: 21px 15px 21px 30px;
       color: white;
       @extend %rubik-500;
+      transition: all .3s;
+      position: relative;
+      &:hover{
+        transform: scale(1.05);
+      }
+      &-arrow{
+        position: absolute;
+        right: 20px;
+      }
       }
     }
     &-image{
@@ -141,6 +147,135 @@
     }
   }
 }
+
+ul.slick-dots{
+  display: flex;
+  justify-content: center;
+  padding-top: 207px;
+  li{
+    button{
+      background-color: #fde3cc;
+      border-radius: 50%;
+      border: none;
+      font-size: 10px;
+      line-height: 9px;
+      color: $default;
+      width: 29px;
+      height: 29px;
+      @extend %rubik-500
+    }
+    &.slick-active{
+      button{
+      background-color: #fff;
+      }
+    }
+  }
+}
+
+.slick-dots li + li{
+  margin-left: 10px;
+}
+
+
+.footer{
+  padding: 85px 0 40px;
+  &-top{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 70px;
+    border-bottom: 1px solid #dae4e9;
+    &__item{
+      &__adress{
+        margin-bottom: 20px;
+        display: inline-block;
+        color: $linkfont;
+        line-height: 24px;
+      }
+      &__email, &__phone{
+        color: $linkfont;
+      }
+      &__title{
+        margin-bottom: 32px;
+        padding-top: 20px;
+        font-size: 16px;
+        line-height: 21px;
+        text-transform: uppercase;
+        color: #1f2044;
+        @extend %dmsans-700;
+      }
+      &__text{
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 39px;
+        @extend %rubik-400;
+        color: $linkfont;
+      }
+      &__form{
+        &-input{
+          width: 170px;
+          border: none;
+          background-color: #fef7f0;
+          padding: 14px 16px;
+          font-size: 12px;
+          &::placeholder{
+            font-size: 12px;
+            color: #234969;
+          }
+        }
+        &-btn{
+          width: 100px;
+          border: none;
+          padding: 14px 16px;
+          color: white;
+          cursor: pointer;
+        }
+      }
+    }
+    &__logo{
+      margin-bottom: 38px;
+    }
+    &__contact{
+      width: 231px;
+      margin-right: 69px;
+    }
+    &__nav{
+      width: 145px;
+      margin-right: 145px;
+    }
+    &__acc{
+      width: 100px;
+      margin-right: 180px;
+    }
+    &__form{
+      width: 295px
+    }
+  }
+  &-bottom{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__copy{
+      font-size: 14px;
+      line-height: 32px;
+      color: $linkfont
+    }
+    &__list{
+      display: flex;
+      justify-content: space-between;
+      width: 270px;
+      &-item{
+        padding: 0 15px;
+      }
+    }
+  }
+}
+
+.footer-bottom__list-item + .footer-bottom__list-item {
+  border-left: 1px solid #7b7b7b;
+}
+
+
 
 
 
