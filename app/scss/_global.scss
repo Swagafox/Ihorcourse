@@ -11,7 +11,7 @@ body{
 }
 
 .container{
-  max-width: 1770px;
+  max-width: 1800px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -34,4 +34,11 @@ a{
   line-height: 32px;
   @extend %rubik-400;
   text-transform: capitalize;
+}
+
+.title{
+  @extend %dmsans-700;
+  color: $h2;
+  font-size: 36px;
+  text-align: center;
 }
