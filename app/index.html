@@ -214,39 +214,39 @@
       </section>
     </div>
     <section class="gallery">
-      <div class="container">
+      <div class="container__inner">
         <h2 class="title gallery__title">
           Products of the week  
         </h2>
           <ul class=" filter gallery__filter">
             <li class="fliter__item gallery__filter-item">
-              <button class=" filter-btn gallery__filter-btn filter-btn--active">
+              <button class=" filter-btn gallery__filter-btn filter-btn--active" data-filter="all">
               All
             </button>
             </li>
             <li class="filter__item gallery__filter-item">
-              <button class="filter-btn gallery__filter-btn">
+              <button class="filter-btn gallery__filter-btn" data-filter=".category-a">
                 Furniture
             </button>
             </li>
             <li class="filter__item gallery__filter-item">
-              <button class="filter-btn gallery__filter-btn">
+              <button class="filter-btn gallery__filter-btn" data-filter=".category-b">
                 Chairs
             </button>
             </li>
             <li class="filter__item gallery__filter-item">
-              <button class="filter-btn gallery__filter-btn">
+              <button class="filter-btn gallery__filter-btn" data-filter=".category-c">
                 Lighting
             </button>
             </li>
             <li class="filter__item gallery__filter-item">
-              <button class="filter-btn gallery__filter-btn">
+              <button class="filter-btn gallery__filter-btn" data-filter=".category-d">
                 Decor
             </button>
             </li>
           </ul>
           <div class="gallery__content">
-            <div class="gallery__content-item">
+            <div class="gallery__content-item mix category-a">
                 <img class="gallery__content-img" src="images/item1.svg.png" alt="chair" >
                 <h4 class="gallery__content-title">
                   Wooden radio
@@ -280,7 +280,7 @@
                   </div>
                 </div>
             </div>
-            <div class="gallery__content-item">
+            <div class="gallery__content-item mix category-a">
               <img class="gallery__content-img" src="images/item1.svg.png" alt="chair">
               <h4 class="gallery__content-title">
                 Wooden radio
@@ -316,7 +316,7 @@
                   </a>
                 </div>
               </div>
-            </div><div class="gallery__content-item">
+            </div><div class="gallery__content-item mix category-b">
               <img class="gallery__content-img" src="images/item1.svg.png" alt="chair">
               <h4 class="gallery__content-title">
                 Wooden radio
@@ -352,7 +352,8 @@
                   </a>
                 </div>
               </div>
-            </div><div class="gallery__content-item">
+            </div>
+            <div class="gallery__content-item mix category-b">
               <img class="gallery__content-img" src="images/item1.svg.png" alt="chair">
               <h4 class="gallery__content-title">
                 Wooden radio
@@ -388,7 +389,8 @@
                   </a>
                 </div>
               </div>
-            </div><div class="gallery__content-item">
+            </div>
+            <div class="gallery__content-item mix category-b">
               <img class="gallery__content-img" src="images/item1.svg.png" alt="chair">
               <h4 class="gallery__content-title">
                 Wooden radio
@@ -424,7 +426,7 @@
                   </a>
                 </div>
               </div>
-            </div><div class="gallery__content-item">
+            </div><div class="gallery__content-item mix category-c">
               <img class="gallery__content-img" src="images/item1.svg.png" alt="chair">
               <h4 class="gallery__content-title">
                 Wooden radio
@@ -460,7 +462,7 @@
                   </a>
                 </div>
               </div>
-            </div><div class="gallery__content-item">
+            </div><div class="gallery__content-item mix category-c">
               <img class="gallery__content-img" src="images/item1.svg.png" alt="chair">
               <h4 class="gallery__content-title">
                 Wooden radio
@@ -496,7 +498,7 @@
                   </a>
                 </div>
               </div>
-            </div><div class="gallery__content-item">
+            </div><div class="gallery__content-item mix category-d">
               <img class="gallery__content-img" src="images/item1.svg.png" alt="chair">
               <h4 class="gallery__content-title">
                 Wooden radio
@@ -534,6 +536,8 @@
               </div>
             </div>
           </div>
+      </div>
+      <div class="container">
           <div class="gallery-best">
             <div class="gallery-best__item">
               <img class="gallery-best__image" src="images/light_big.png" alt="">
@@ -577,84 +581,84 @@
           </div>
         </div>
       </section>
-      <section class="new">
-        <div class="container">
-          <h2 class="title new__title">
+      <section class="newest">
+        <div class="container__inner">
+          <h2 class="title newest__title">
             New design
           </h2>
-          <ul class="filter new__filter">
-            <li class="filter__item new__filter-item">
-              <button class="filter-btn new__filter-btn filter-btn--active">
+          <ul class="filter newest__filter">
+            <li class="filter__item newest__filter-item">
+              <button class="filter-btn newest__filter-btn filter-btn--active" data-filter="all">
                 All
             </button>
             </li>
-            <li class="filter__item new__filter-item">
-              <button class="filter-btn new__filter-btn">
+            <li class="filter__item newest__filter-item">
+              <button class="filter-btn newest__filter-btn" data-filter=".category-1">
                 Furniture
             </button>
             </li>
-            <li class="filter__item new__filter-item">
-              <button class="filter-btn new__filter-btn">
+            <li class="filter__item newest__filter-item">
+              <button class="filter-btn newest__filter-btn" data-filter=".category-2">
                 Chairs
             </button>
             </li>
-            <li class="filter__item new__filter-item">
-              <button class="filter-btn new__filter-btn">
+            <li class="filter__item newest__filter-item">
+              <button class="filter-btn newest__filter-btn" data-filter=".category-3">
                 Lighting
             </button>
             </li>
-            <li class="filter__item new__filter-item">
-              <button class="filter-btn new__filter-btn">
+            <li class="filter__item newest__filter-item">
+              <button class="filter-btn newest__filter-btn" data-filter=".category-4">
                 Decor
             </button>
             </li>
           </ul>
-          <div class="new__inner">
-            <div class="new__inner-item">
-              <h4 class="new__inner-item__title">
-                Beat flat pendant black
+          <div class="newest__content">
+            <div class="newest__content-item mix category-1">
+              <h4 class="newest__content-item__title">
+                Beat flat pendant red
               </h4>
-              <p class="new__inner-item__subtitle">
+              <p class="newest__content-item__subtitle">
                 Classic
               </p>
             </div>
-            <div class="new__inner-item">
-              <h4 class="new__inner-item__title">
+            <div class="newest__content-item mix category-1">
+              <h4 class="newest__content-item__title">
                 Beat flat pendant black
               </h4>
-              <p class="new__inner-item__subtitle">
+              <p class="newest__content-item__subtitle">
                 Classic
               </p>
             </div>
-            <div class="new__inner-item">
-              <h4 class="new__inner-item__title">
-                Beat flat pendant black
+            <div class="newest__content-item mix category-2">
+              <h4 class="newest__content-item__title">
+                Beat flat pendant green
               </h4>
-              <p class="new__inner-item__subtitle">
+              <p class="newest__content-item__subtitle">
                 Classic
               </p>
             </div>
-            <div class="new__inner-item">
-              <h4 class="new__inner-item__title">
-                Beat flat pendant black
+            <div class="newest__content-item mix category-2">
+              <h4 class="newest__content-item__title">
+                Beat flat pendant blue
               </h4>
-              <p class="new__inner-item__subtitle">
+              <p class="newest__content-item__subtitle">
                 Classic
               </p>
             </div>
-            <div class="new__inner-item">
-              <h4 class="new__inner-item__title">
-                Beat flat pendant black
+            <div class="newest__content-item mix category-3">
+              <h4 class="newest__content-item__title">
+                Beat flat pendant pink
               </h4>
-              <p class="new__inner-item__subtitle">
+              <p class="newest__content-item__subtitle">
                 Classic
               </p>
             </div>
-            <div class="new__inner-item">
-              <h4 class="new__inner-item__title">
-                Beat flat pendant black
+            <div class="newest__content-item mix category-4">
+              <h4 class="newest__content-item__title">
+                Beat flat pendant brown
               </h4>
-              <p class="new__inner-item__subtitle">
+              <p class="newest__content-item__subtitle">
                 Classic
               </p>
             </div>
@@ -666,10 +670,93 @@
         <img src="images/playbtn.png" alt="play">
       </a>
     </section>
+    <section class="blog">
+      <div class="container__inner">
+        <div class="blog__titles">
+          <h2 class="title blog__title">
+            Our insights & articles
+          </h2>
+          <a class="blog__titles-link" href="#">
+            View all
+            <span class="blog__titles-arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="7px" height="12px">
+                <path fill-rule="evenodd" fill="#191919"
+                  d="M1.333,11.687 C1.184,11.687 1.034,11.626 0.922,11.504 C0.819,11.390 0.767,11.245 0.767,11.100 C0.767,10.943 0.826,10.789 0.944,10.673 L5.491,6.198 L0.944,1.724 C0.826,1.609 0.767,1.453 0.767,1.297 C0.767,1.152 0.819,1.007 0.922,0.893 C1.138,0.657 1.496,0.647 1.723,0.870 L6.700,5.768 C6.705,5.772 6.709,5.777 6.714,5.782 C6.762,5.831 6.801,5.889 6.827,5.951 L6.827,5.951 C6.828,5.951 6.828,5.951 6.828,5.951 C6.862,6.029 6.880,6.112 6.880,6.195 C6.880,6.196 6.880,6.197 6.880,6.198 C6.880,6.284 6.862,6.369 6.827,6.447 L6.827,6.447 C6.827,6.448 6.826,6.448 6.826,6.448 C6.826,6.449 6.826,6.449 6.826,6.449 C6.826,6.449 6.826,6.449 6.826,6.450 C6.799,6.509 6.762,6.565 6.715,6.614 C6.710,6.619 6.705,6.623 6.700,6.628 L1.723,11.527 C1.614,11.635 1.473,11.687 1.333,11.687 Z" />
+              </svg>
+            </span>
+          </a>
+        </div>
+        <div class="blog__items">
+          <div class="blog__item">
+            <a class="blog__item-imagelink" href="">
+              <img class="blog__item-img" src="images/blogitem.jpg" alt="blog-img">
+            </a>
+            <p class="blog__item-category">
+              news
+            </p>
+            <h3 class="blog__item-article">
+              Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            </h3>
+            <div class="blog__item-info">
+              <p class="blog__item-date">28 JANUARY, 2020
+              </p>
+              <p class="blog__item-author">
+                By admin
+              </p>
+            </div>
+          </div>
+          <div class="blog__item">
+            <a class="blog__item-imagelink" href="">
+              <img class="blog__item-img" src="images/blogitem.jpg" alt="blog-img">
+            </a>
+            <p class="blog__item-category">
+              news
+            </p>
+            <h3 class="blog__item-article">
+              Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            </h3>
+            <div class="blog__item-info">
+              <p class="blog__item-date">28 JANUARY, 2020
+              </p>
+              <p class="blog__item-author">
+                By admin
+              </p>
+            </div>
+          </div>
+          <div class="blog__item">
+            <a class="blog__item-imagelink" href="">
+              <img class="blog__item-img" src="images/blogitem.jpg" alt="blog-img">
+            </a>
+            <p class="blog__item-category">
+              news
+            </p>
+            <h3 class="blog__item-article">
+              Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+            </h3>
+            <div class="blog__item-info">
+              <p class="blog__item-date">28 JANUARY, 2020
+              </p>
+              <p class="blog__item-author">
+                By admin
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="blog__brands">
+          <div class="blog__brands-items">
+          <img class="blog__brands-item" src="images/brand.png" alt="">
+          <img class="blog__brands-item" src="images/brand2.png" alt="">
+          <img class="blog__brands-item" src="images/brand3.png" alt="">
+          <img class="blog__brands-item" src="images/brand4.png" alt="">
+          <img class="blog__brands-item" src="images/brand5.png" alt="">
+        </div>
+      </div>
+    </section>
   </main>
   
   <footer class="footer">
-    <div class="container">
+    <div class="container__inner">
       <div class="footer-top">
         <div class="footer-top__item footer-top__contact">
           <img class="footer-top__logo" src="images/Glee_.png" alt="logo" >

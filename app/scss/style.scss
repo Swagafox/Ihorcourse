@@ -217,7 +217,6 @@ ul.slick-dots{
   }
   
   &__content{
-    max-width: 1170px;
     margin: 0 auto;
     display: grid;
     margin-top: 80px;
@@ -343,14 +342,13 @@ ul.slick-dots{
   }
 }
 
-.new{
+.newest{
   padding: 104px 0 120px;
   &__title{
     margin-bottom:  29px;
     text-transform: capitalize;
   }
-  &__inner{
-    max-width: 1170px;
+  &__content{
     margin: 0 auto;
     margin-top: 75px;
     display: grid;
@@ -387,6 +385,89 @@ ul.slick-dots{
   justify-content: center;
 }
 
+.blog{
+  padding-top: 120px;
+  position: relative;
+  background-image: url;
+  &__titles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 46px;
+    z-index: 9;
+    &-link{
+      @extend %dmsans-700;
+      color: $h2;
+      position: relative;
+      margin-right: 28px;
+    }
+    &-arrow{
+      position: absolute;
+      padding-left: 19px;
+      top: 1px;
+    }
+  }
+  &__title{
+    text-transform: capitalize;
+    text-align: left;
+  }
+  &__items{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    width: 371px;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    position: relative;
+    background-color: #fff;
+    &-category{
+      position: absolute;
+      width: 103px;
+      background-color: $subt;
+      color: #fff;
+      padding: 5px 0;
+      text-align: center;
+      border-radius: 40px;
+      text-transform: uppercase;
+      transform: translateY(-50%);
+      left: 28px;
+    }
+    &-article{
+      margin-top: 36px;
+      margin-left: 31px;
+      margin-right: 31px;
+      padding-bottom: 18px;
+      margin-bottom: 22px;
+      border-bottom: 1px solid #e0e0e0;
+      font-size: 18px;
+      color: $h2;
+      @extend %dmsans-500;
+    }
+    &-info{
+      display: flex;
+      margin-left: 31px;
+      padding-bottom: 27px;
+      color: #222933;
+      @extend %rubik-400;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+    &-date{
+      margin-right: 30px;
+    }
+  }
+  &__brands{
+    background-color: #fef7f0;
+    padding: 264px 0 88px;
+    margin-top: -190px;
+    &-items{
+      display: flex;
+      justify-content: space-between;
+      max-width: 1170px;
+      margin: 0 auto;
+    }
+  }
+}
 
 
 
