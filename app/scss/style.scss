@@ -523,7 +523,6 @@ ul.slick-dots{
   }
 }
 
-
 .brands{
   &__login{
     background-color: #fef7f0;
@@ -537,6 +536,44 @@ ul.slick-dots{
     }
   }
 }
+
+.terms{
+  padding: 121px 0 95px;
+  :last-child{
+    margin-bottom: 0;
+  }
+  &__title{
+    font-size: 24px;
+    @extend %rubik-500;
+    margin-bottom: 34px;
+  }
+  &__list{
+    list-style: decimal-leading-zero;
+  }
+  &__item{
+    @extend %rubik-400;
+    line-height: 30px;
+    margin-bottom: 20px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  &__text {
+    line-height: 30px;
+    margin-bottom: 66px;
+    @extend %rubik-400;
+  }
+}
+
+ol.terms__list{
+  margin-bottom: 66px;
+  padding-left: 45px;
+}
+
+.blog__terms{
+  padding-top: 0;
+}
+
 
 
 .footer{
