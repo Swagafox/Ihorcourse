@@ -1,0 +1,185 @@
+html, body{
+  height: 100%;
+}
+
+body{
+  font-size: 16px;
+  color: $default;
+  @extend %dmsans-400;
+  display: flex;
+  flex-direction: column;
+}
+
+.container{
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container__inner{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.main{
+  flex-grow: 1;
+}
+
+.btn1 {
+  display: inline-block;
+  background-color: #a3bbc8;
+  text-transform: capitalize;
+  font-size: 15px;
+  line-height: 12px;
+  border: none;
+  color: white;
+}
+
+.btn2{
+  border: 1px solid #b3b7b5;
+  background-color: transparent;
+  font-size: 15px;
+  line-height: 12px;
+  text-transform: capitalize;
+  display: inline-block;
+  color: $default;
+}
+
+a{
+  color: $linkfont;
+  font-size: 14px;
+  line-height: 32px;
+  @extend %rubik-400;
+  text-transform: capitalize;
+}
+
+.title{
+  @extend %dmsans-700;
+  color: $h2;
+  font-size: 36px;
+  text-align: center;
+}
+
+  .filter {
+  display: flex;
+  justify-content: center;
+  &-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    color: $galbtn;
+    transition: all .3s;
+    padding: 0 16px;
+    @extend %dmsans-700;
+
+    &:hover {
+      color: $h2;
+    }
+  }
+
+  &-btn--active {
+    color: $h2;
+  }
+}
+
+.top {
+  background-color: $bgbread;
+  padding: 30px 0;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+
+  &__title {
+    font-size: 36px;
+    line-height: 24px;
+    @extend %rubik-400;
+    color: $toptitle;
+    margin-bottom: 10px;
+  }
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: center;
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__item{
+    color: $toptitle;
+    &:last-child{
+      color: red;
+    }
+  }
+  &__divider {
+    margin: 0 5px;
+  }
+  &__link {
+    font-size: 14px;
+    @extend %rubik-400;
+    color: inherit;
+  }
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  &__list{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #a3bbc8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+    &:hover {
+      background-color: #a3bbc8;
+      .pagination__link{
+        color: #fff;
+      }
+    }
+  }
+  &__item + .pagination__item{
+    margin-left: 15px;
+  }
+  &__link{
+    @extend %rubik-400;
+    font-size: 16px;
+  }
+  &__item--active{
+    border: none;
+    background-color: #a3bbc8;
+    .pagination__link{
+      color: #fff;
+    }
+  }
+  &__btn{
+    font-size: 16px;
+    width: 74px;
+    height: 50px;
+    border: 1px solid #a3bbc8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+    &:hover{
+      background-color: #a3bbc8;
+      color: #fff;
+    }
+  }
+}
+
+ul.pagination__list{
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.pagination__prev{
+  display: none;
+}
+
