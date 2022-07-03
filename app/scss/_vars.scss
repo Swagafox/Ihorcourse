@@ -8,6 +8,14 @@ $subt: #a3bbc8;
 $bgbread: #edf1f4;
 $toptitle: #222933;
 
+%checkbox-hidden{
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
 
 %dmsans-700{
   font-family: 'DMSans-Bold', sans-serif;

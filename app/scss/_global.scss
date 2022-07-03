@@ -122,3 +122,64 @@ a{
   }
 }
 
+.pagination{
+  display: flex;
+  justify-content: center;
+  &__list{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #a3bbc8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+    &:hover {
+      background-color: #a3bbc8;
+      .pagination__link{
+        color: #fff;
+      }
+    }
+  }
+  &__item + .pagination__item{
+    margin-left: 15px;
+  }
+  &__link{
+    @extend %rubik-400;
+    font-size: 16px;
+  }
+  &__item--active{
+    border: none;
+    background-color: #a3bbc8;
+    .pagination__link{
+      color: #fff;
+    }
+  }
+  &__btn{
+    font-size: 16px;
+    width: 74px;
+    height: 50px;
+    border: 1px solid #a3bbc8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+    &:hover{
+      background-color: #a3bbc8;
+      color: #fff;
+    }
+  }
+}
+
+ul.pagination__list{
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.pagination__prev{
+  display: none;
+}
+
