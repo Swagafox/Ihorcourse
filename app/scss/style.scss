@@ -233,8 +233,9 @@ ul.slick-dots{
         display: block;
       }
     }
-    &-img{
+    &-imagelink{
       margin-bottom: 78px;
+      display: block;
     }
     &-title{
       margin-bottom: 17px;
@@ -782,6 +783,137 @@ ol.terms__list{
   margin-bottom: 108px;
 }
 
+.product{
+  padding: 120px 0;
+  &-item{
+    margin-bottom: 100px;
+    &__slide{
+      width: 550px;
+      display: flex;
+      .slick-vertical .slick-slide{
+        height: 160px;
+        margin-bottom: 24px;
+      }
+    }
+    &__inner {
+      display:flex;
+    }
+    &__content {
+      width: 600px;
+      margin-left: 69px;
+    }
+    &__title{
+      text-align: left;margin-bottom: 18px;
+      @extend %rubik-400;
+      font-size: 40px;
+      color: $h2;
+    }
+    &__rating{
+      margin-bottom: 37px;
+    }
+    &__price{
+      margin-bottom: 37px;
+      @extend %rubik-400;
+      color: $h2;
+      font-size: 30px;
+    }
+    &__descr{
+      @extend %rubik-400;
+      line-height: 30px;
+      margin-bottom: 37px;
+    }
+    &__order-box{
+      margin-bottom: 70px;
+      display: flex;
+      align-items: center;
+      span{
+        border-left: none;
+        border-right: none;
+        cursor: auto;
+        &:hover{
+          background-color: transparent;
+          color: $h2;
+        }
+      }
+    }
+    &__order-add{
+      width: 208px;
+      padding: 20px 0;
+      text-transform: uppercase;
+      font-size: 15px;
+      @extend %rubik-400;
+      border-radius: 10px;
+      margin-left: 15px;
+      display: inline-block;
+      color: #fff;
+      cursor: pointer;
+    }
+    &__order-num{
+      width: 50px;
+      height: 50px;
+      border: 1px solid #a3bbc8;
+      transition: all .3s;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @extend %rubik-400;
+      color: $h2;
+      cursor: pointer;
+      &:hover {
+      background-color: #a3bbc8;
+      color: #fff;
+      }
+    }
+    &__info-text{
+      display: flex;
+      width: 126px;
+      @extend %rubik-400;
+    }
+    &__info-link{
+      font-size: 16px;
+      line-height: 16px;
+      color: $default;
+      @extend %rubik-400;
+    }
+    &__info-text + .product-item__info-text{
+      margin-top: 15px;
+    }
+    &__info-elem{
+      margin-right: 5px;
+    }
+  }
+}
+
+.product-slide{
+  &__thumbs{
+    width: 138px;
+    margin-right: 25px;
+  }
+  &__thumbs-item{
+    height: 160px;
+    width: 138px;
+    margin-bottom: 24px;
+    border: 2px solid #f2f2f2;
+    cursor: pointer;
+    img{
+      object-fit: cover;
+      height: 150px;
+      width: 138px;
+    }
+  }
+  &__main{
+    width: 387px;
+    height: 530px;
+    width: 387px;
+    border: 2px solid #f2f2f2;
+    text-align: center;
+    padding-top: 63px;
+    img {
+      display: inline-block;
+    }
+  }
+}
 
 
 
