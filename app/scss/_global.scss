@@ -83,22 +83,6 @@ a{
   }
 }
 
-.top {
-  background-color: $bgbread;
-  padding: 30px 0;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-
-  &__title {
-    font-size: 36px;
-    line-height: 24px;
-    @extend %rubik-400;
-    color: $toptitle;
-    margin-bottom: 10px;
-  }
-}
-
 .breadcrumbs {
   display: flex;
   justify-content: center;

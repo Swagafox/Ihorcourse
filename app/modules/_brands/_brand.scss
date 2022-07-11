@@ -1,0 +1,15 @@
+.brands {
+  &__login {
+    background-color: #fef7f0;
+    padding: 85px 50px;
+
+    &-items {
+      max-width: 1170px;
+      padding: 0 50px;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      align-items: center;
+    }
+  }
+}

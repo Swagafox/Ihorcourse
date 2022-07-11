@@ -1,0 +1,122 @@
+@media (max-width: 1200px) {
+  .footer-top{
+    &__item{
+      &__form-input{
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      &__form-btn{
+        width: 100%;
+        display: block;
+      }
+    }
+    &__nav{
+      margin-right: 100px;
+    }
+    &__acc{
+      margin-right: 130px;
+    }
+  }
+  .header__top {
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .footer-bottom{
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 1050px){
+  .menu{
+    order: 1;
+    width: 100%;
+    transform:translateY(-1000%);
+    position: absolute;
+    top: 100px;
+    z-index: 9999;
+    transition: all .5s;
+    &.menu--active{
+      transition: all .5s;
+      transform: translateY(0);
+    }
+  }
+  ul.menu__list{
+    margin: 0 auto;
+    width: 520px;
+  }
+  .footer-top {
+    flex-wrap: wrap;
+    &__form{
+      max-width: 100%;
+      margin-top: 30px;
+    }
+    &__acc{
+      margin-right: 0;
+    }
+    &__nav{
+      margin-right: 70px;
+    }
+  }
+}
+
+@media (max-width: 500px){
+  .logo{
+    width: 100%;
+    display: inline-block;
+  }
+  .user-nav{
+    width: 100%;
+    margin-top: 40px;
+  }
+  .menu{
+    top: 170px;
+  }
+  .menu__list{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &-item + .menu__list-item{
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+  ul.menu__list{
+    width: 100%;
+  }
+  .footer-top{
+    &__contact{
+      margin: 0 auto;
+      width: 215px;
+      margin-bottom: 20px;
+    }
+    &__nav{
+      margin-right: 40px;
+      margin-left: 40px;
+    }
+    &__acc{
+      margin-right: 30px;
+    }
+    &__form{
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .footer-top{
+    &__nav{
+      margin: 0;
+      width: 200px;
+    }
+    &__acc{
+      margin: 0;
+      width: 200px;
+    }
+    &__contact{
+      margin: 0;
+    }
+    &__form{
+      margin: 0;
+    }
+  }
+}

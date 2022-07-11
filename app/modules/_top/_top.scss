@@ -1,0 +1,43 @@
+.top {
+  background-color: $bgbread;
+  padding: 30px 0;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+
+  &__title {
+    font-size: 36px;
+    line-height: 24px;
+    @extend %rubik-400;
+    color: $toptitle;
+    margin-bottom: 10px;
+  }
+}
+
+.breadcrumbs {
+  display: flex;
+  justify-content: center;
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    color: $toptitle;
+
+    &:last-child {
+      color: red;
+    }
+  }
+
+  &__divider {
+    margin: 0 5px;
+  }
+
+  &__link {
+    font-size: 14px;
+    @extend %rubik-400;
+    color: inherit;
+  }
+}

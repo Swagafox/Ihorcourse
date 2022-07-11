@@ -1,5 +1,14 @@
 $(function() {
   
+  $('.burger').on('click', function (e) {
+    e.preventDefault();
+    $('.menu').toggleClass('menu--active');
+  })
+
+  $('.footer-top__item__title').on('click', function(){
+    $(this).siblings().slideToggle();
+  })
+
   $('.product-tabs__top-item').on('click', function (e) {
     e.preventDefault();
     $('.product-tabs__top-item').removeClass('product-tabs__top-item--active');
@@ -30,8 +39,6 @@ $(function() {
     $('.pagination__item').removeClass('pagination__item--active');
     $(this).addClass('pagination__item--active');
   });
-
-  $('.select-style').styler();
   
   $('.login__checkbox').styler();
 
@@ -66,7 +73,6 @@ $(function() {
     slidesToScroll: 4
   })
 
-  related__slider
   var mixer = mixitup('.gallery__content', {
     animation: {
       enable: false
