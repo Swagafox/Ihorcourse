@@ -115,6 +115,9 @@
       transition: all .5s;
       transform: translateY(0);
     }
+    &__list{
+      background-color: white;
+    }
   }
 
   ul.menu__list {
@@ -131,6 +134,13 @@
   .user-nav {
     width: 100%;
     margin-top: 40px;
+    &__link:first-child{
+      margin-right: 5px;
+    }
+    &__cart{
+      width: 160px;
+      margin-right: 5px;
+    }
   }
   .menu {
     top: 170px;

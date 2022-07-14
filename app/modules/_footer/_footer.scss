@@ -28,6 +28,7 @@
         text-transform: uppercase;
         color: #1f2044;
         @extend %dmsans-700;
+        pointer-events: none;
       }
 
       &__text {
@@ -171,6 +172,48 @@
     &__form {
       margin: 0 auto;
       margin-top: 20px;
+    }
+  }
+  .footer-bottom{
+    justify-content: center;
+    &__copy{
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .footer-top {
+    &__item{
+      &__title{
+        pointer-events: auto;
+      }
+      &__list{
+        display: none;
+      }
+      &__form{
+        display: none;
+      }
+      &__text{
+        display: none;
+      }
+    }
+    &__nav {
+      margin: 0;
+      width: 200px;
+    }
+
+    &__acc {
+      margin: 0;
+      width: 200px;
+    }
+
+    &__contact {
+      margin: 0;
+    }
+
+    &__form {
+      margin: 0;
     }
   }
 }

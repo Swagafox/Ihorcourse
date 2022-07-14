@@ -30,7 +30,7 @@
     &-inner {
       max-width: 430px;
       margin-right: 120px;
-
+      padding-left: 10px;
       &__title {
         font-size: 72px;
         line-height: 70px;
@@ -340,4 +340,126 @@ ul.slick-dots {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 1050px){
+  .slider{
+    background-size: 40%;
+    padding-top: 20px;
+    &__item-image{
+      padding-top: 100px;
+      padding-right: 65px;
+    }
+    &__item-inner{
+      &__title{
+        font-size: 52px;
+        line-height: 60px;
+      }
+    }
+  }
+  ul.slick-dots{
+    padding-top: 170px;
+  }
+  .offer__bottom{
+    flex-wrap: wrap;
+    &-item{
+      border-bottom: 1px solid #e8e4df;
+      border-right: none;
+    }
+  }
+}
+
+
+@media (max-width: 850px){
+  .gallery, .newest{
+    padding: 80px 0;
+  }
+  .blog{
+    padding-top: 80px;
+  }
+  .slider{
+    min-height: 0;
+    padding-bottom: 60px;
+    &__item-image {
+      padding-top: 70px;
+      padding-right: 65px;
+    }
+    &__item-inner{
+      margin-right: 70px;
+      &__title {
+        font-size: 38px;
+        line-height: 46px;
+      }
+      &__text{
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+  ul.slick-dots{
+    padding-top: 100px;
+  }
+
+  .gallery__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+  .gallery-best{
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 50px;
+  }
+  .newest{
+    &__content{
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+  .video {
+    height: 250px;
+    background-size: cover;
+    &__link{
+      img{
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+}
+
+@media (max-width: 630px){
+  .slider{
+    background-image: none;
+    &__item-image{
+      display: none;
+    }
+  }
+  .gallery, .newest{
+    padding: 55px 0;
+  }
+  .blog{
+    padding-top: 55px;
+  }
+  .title{
+    font-size: 28px;
+  }
+  ul.slick-dots {
+    padding-top: 70px;
+  }
+  .filter-btn{
+    padding: 0 8px;
+  }
+  .gallery-best{
+    &__image{
+      display: none;
+    }
+    &__item{
+      min-width: 100%;
+      padding: 40px;
+    }
+  }
 }
