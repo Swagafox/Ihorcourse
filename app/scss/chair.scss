@@ -380,3 +380,81 @@
 .slick-list {
   position: relative;
 }
+
+@media (max-width: 850px){
+  .product-slide{
+    &__thumbs{
+      display: none;
+    }
+  }
+  .product-item{
+    &__content{
+      width: 40%;
+    }
+  }
+}
+
+@media (max-width: 500px){
+  .product{
+    padding: 80px 0;
+  }
+  .product-item{
+  &__inner{
+      display: block;
+    }
+    &__content{
+      margin: 0;
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+  .product-slide{
+    width: 100%;
+    &__main{
+      width: 350px;
+      margin: 0 auto;
+    }
+  }
+  .product-tabs{
+    &__top{
+      display: block;
+      margin-bottom: 0;
+    }
+    &__top-item{
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  }
+  .related__title{
+    display: 100%;
+  }
+  .slick-prev, .slick-next{
+    top: -65px;
+  }
+  .reviews__content{
+    &-name{
+      margin-right: 5px;
+    }
+    &-date{
+      padding-left: 5px;
+    }
+  }
+  .reviews-form{
+    &__rate-title{
+    display: block;
+    margin-right: 0;
+    margin-bottom: 10px;
+    }
+    &__label{
+      margin-right: 8px;
+    }
+    &__text-box{
+      display: block;
+      margin-bottom: 0;
+    }
+    &__input-text{
+      width: 100%;
+      margin-bottom: 25px;
+    }
+  }
+}

@@ -1,9 +1,3 @@
-.contact-blog {
-  padding-top: 0;
-}
-.blog__terms {
-  padding-top: 0;
-}
 .blog {
   padding-top: 120px;
   position: relative;
@@ -99,6 +93,13 @@
       align-items: center;
     }
   }
+}
+.contact-blog {
+  padding-top: 0;
+}
+
+.blog__terms {
+  padding-top: 0;
 }
 
 @media (max-width: 1050px){

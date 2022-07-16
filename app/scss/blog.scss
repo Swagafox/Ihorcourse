@@ -164,3 +164,43 @@
     margin-left: 0;
   }
 }
+
+@media (max-width: 1150px){
+  .blog-page{
+    &__content{
+      width: 100%;
+    }
+    &__item-img{
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1050px){
+  .blog-page{
+    padding: 80px 0;
+    &__inner{
+      flex-direction: column;
+    }
+    &__filters{
+      order: -1;
+    }
+  }
+  .filters__category{
+    display: none;
+  }
+  .filters__recent{
+    display: none;
+  }
+}
+
+@media (max-width: 500px){
+  .blog-page{
+    &__item-img{
+      height: 250px;
+    }
+    &__item-title{
+      font-size: 28px;
+    }
+  }
+}

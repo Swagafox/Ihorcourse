@@ -5,6 +5,10 @@ $(function() {
     $('.menu').toggleClass('menu--active');
   })
 
+  $('.filters-btn').on('click', function () {
+    $('.shop__filters').slideToggle();
+  })
+
   $('.footer-top__item__title').on('click', function(){
     $(this).siblings().slideToggle();
   })
@@ -32,7 +36,8 @@ $(function() {
     asNavFor: '.product-slide__thumbs',
     draggable: false,
     arrows: false,
-    fade: true
+    autoplay: true,
+    autoplaySpeed: 4000
   });
 
   $('.pagination__item').on('click', function(){
@@ -69,8 +74,8 @@ $(function() {
   })
   $('.related__slider').slick({
     infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 4
+    slidesToShow: 2,
+    slidesToScroll: 2
   })
 
   var mixer = mixitup('.gallery__content', {

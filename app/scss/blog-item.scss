@@ -210,3 +210,31 @@ ul.blog-page__share {
     }
   }
 }
+
+@media (max-width: 850px){
+  .comments-form{
+    &__input-text{
+      width: 48%;
+    }
+  }
+  .comments__item:nth-child(odd){
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 500px){
+  .blog-page{
+    &__author{
+      flex-wrap: wrap;
+    }
+    &__author-info{
+      margin-bottom: 15px;
+    }
+    &__additional{
+      flex-wrap: wrap;
+    }
+    &__additional-content{
+      margin-left: 0;
+    }
+  }
+}
